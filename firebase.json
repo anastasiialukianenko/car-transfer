@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "./front/dist",
     "site": "carshippingfromukraine",
     "ignore": [
       "firebase.json",
