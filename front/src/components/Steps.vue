@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="steps">
     <h2>Як це працює?</h2>
 
     <ul>
@@ -51,6 +51,7 @@ li{  display: flex;
     position: relative;
     padding-left: 60px;
     gap: 12px;
+    z-index: 2;
 }
 
 .number{
@@ -69,5 +70,15 @@ li{  display: flex;
 .desc{
     font-size: 18px;
     color: grey;
+}
+
+@media screen and (min-width: 1024px) {
+    ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    li{
+        width: calc((100% - 40px)/2);
+    }
 }
 </style>

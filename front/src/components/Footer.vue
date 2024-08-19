@@ -3,9 +3,9 @@
 </script>
 
 <template>
-   <section class="bg-sky-200 section">
-    <p>Звязатись з нами:</p>
-    <a href="tel:+380933485610" class="rounded-lg bg-sky-400 px-12 py-4 text-xl font-semibold text-white shadow-sm lime:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sky-visible:outline-sky-600">+380 (93) 348 56 10</a>
+   <section class="bg-sky-200 section" id="footer">
+    <p class="text-sky-800">Hаші контакти:</p>
+    <a href="tel:+380933485610" class="link rounded-lg bg-sky-400 px-8 py-4 text-xl font-semibold text-white shadow-sm lime:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sky-visible:outline-sky-600">+380 (93) 503 63 53</a>
 
      <div class="social-icons">
         <a href="viber://chat?number=+1234567890" target="_blank" aria-label="Chat on Viber">
@@ -31,11 +31,12 @@
   height: 360px;
 }
 p{
+  text-align: center;
+  text-transform: uppercase;
 margin-top: 82px;
-font-size: 28px;
-font-weight: 400;
-color: white;
-margin-bottom: 28px
+font-size: 26px;
+font-weight: 600;
+margin-bottom: 20px
 }
 .social-icons{
   width: 100%;
@@ -43,4 +44,11 @@ margin-bottom: 28px
     justify-content: space-evenly;
     display: flex;
 }
+@media screen and (min-width: 1024px) {
+  .social-icons{
+    justify-content: center;
+    gap: 28px;
+  }
+}
+
 </style>

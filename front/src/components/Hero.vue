@@ -17,14 +17,13 @@
         </div>
 
         <h1>Перегін вашого авто до Європи</h1>
-        <p>Швидко, ефективно та надійно перевеземо ваше авто з <span class="text-sky-800 font-bold">України в Європу</span>, або з <span class="text-sky-800 font-bold">Європи до України</span></p>
+        <p>Швидко, ефективно та надійно перевеземо ваше авто <span class="text-sky-800 font-bold">своїм ходом</span> чи <span class="text-sky-800 font-bold">автовозом</span> з <span class="text-sky-800 font-bold">України в Європу</span>, або з <span class="text-sky-800 font-bold">Європи до України</span></p>
         <a href="tel:+380933485610" class="rounded-lg bg-sky-400 px-12 py-4 text-xl font-semibold text-white shadow-sm lime:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sky-visible:outline-sky-600">Замовити</a>
 
 
         <div class="back-image">
         </div>
 
-        <!-- //viber telegram -->
     </section>
 </template>
 
@@ -68,5 +67,29 @@ p{
     margin-top: 32px;
     justify-content: space-evenly;
     display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    .hero{
+        padding: 48px;
+    }
+    .social-icons{
+        justify-content: flex-end;
+        gap: 28px;
+        margin-top: 0px;
+    }
+    h1{
+        margin-top: 66px;
+        font-size: 68px;
+    }
+    p{
+        font-size: 32px;
+        width: 60%;
+    }
+    .back-image {
+    height: 70%;
+    bottom: -120px;
+    width: 60%;
+    }
 }
 </style>
